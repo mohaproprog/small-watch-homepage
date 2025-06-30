@@ -90,6 +90,7 @@ body{
     font-size: 1.5rem;
     margin-top: 20px;
     display: none;
+    z-index: 2;
     
 
 }
@@ -104,14 +105,14 @@ hr{
     .nav-list{
         position: absolute;
         flex-direction: column;
-        background-color: rgb(0, 0, 0,0.4);
+        background-color: rgb(0, 0, 0);
         border:5px solid rgb(255,255,255,0.5);
         padding: 90px 20px;
         right: 10px;
         top: 0px;
         padding-right: 60px;
         display: none;
-        z-index: -1;
+        z-index: 1;
     }
     .nav-list ul{
         flex-direction: column;
