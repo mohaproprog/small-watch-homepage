@@ -93,6 +93,9 @@ body{
     
 
 }
+hr{
+    border: 1px solid rgb(255, 255, 255,0.1);
+}
 
 @media (max-width:950px) {
     .navbar{
@@ -137,5 +140,176 @@ body{
     }
     .checkbox:checked + .label + .nav-list{
         display: block;
+    }
+}
+/* 
+hero section */
+
+.hero{
+    display: flex;
+    position: relative;
+}
+.side{
+    flex-basis: 9.3%;
+    border-right: 1px solid  rgb(255, 255, 255,0.1);
+    padding-top: 500px;
+    height: 230px;
+
+}
+.side p{
+    padding-right: 100px;
+    margin-bottom: 30px;
+    writing-mode: vertical-lr;
+    transform:rotate(180deg);
+    font-size: 0.8rem;
+}
+.text{
+    align-self: center;
+    margin: 30px;
+    margin-left: 50px;
+
+
+}
+.text h2{
+    font-size: 3rem;
+    font-weight: 200;
+
+}
+.text h1{
+    font-size: 4rem;
+
+}
+.text p{
+    font-weight: 200;
+    line-height: 2rem;
+
+}
+.text button{
+    padding: 15px 20px;
+    background-color: #EF354B;
+    margin-top: 10px;
+    border: none;
+    color: white;
+
+
+}
+.text button i{
+    margin-left: 20px;
+}
+.watch-img{
+    position: relative;
+
+}
+.watch-img img{
+    width: 500px;
+    margin: 50px;
+    position: relative;
+    z-index: -1;
+}
+.watch-img::after{
+    content: 'MOON';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 15%;
+    left: 50%;
+    font-size: 8rem;
+    writing-mode: vertical-lr;
+    font-weight: 900;
+    color: rgb(255,255,255,0.5);
+    z-index: -2;
+
+}
+
+.price{
+    position: absolute;
+    bottom: 35%;
+    right: 7%;
+}
+.price h3{
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgb(255,255,255,0.5);
+}
+.price p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(255,255,255,0.5);
+}
+
+@media (max-width:950px){
+    .hero{
+        flex-direction: column;
+    }
+    .side{
+        height: 0;
+        border: none;
+        display: flex;
+        justify-content: center;
+        margin-top: -450px;
+        margin-left: 70px;
+    }
+    .side p{
+        writing-mode:horizontal-tb;
+        transform: rotate(0deg);
+    }
+    .price{
+        left: 10%;
+    }
+    .watch-img img{
+        width: 400px;
+    }
+}
+
+.next{
+    position: absolute;
+    bottom: 7%;
+    right: 10%;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-left: 13px;
+    padding-right: 13px;
+    background-color: #EF354B;
+}
+.next p{
+    font-size: 0.8rem;
+}
+
+.glass{
+    position: absolute;
+    display: flex;
+    bottom: 5%;
+    right: 10%;
+    gap: 150px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);          
+    -webkit-backdrop-filter: blur(10px); 
+    padding: 10px;
+
+}
+.glassrow{
+    display: flex;
+    gap: 15px;
+}
+.glass img{
+    width: 40px;
+}
+.glassrow h3 {
+    font-size: 0.7rem;
+}
+.glassrow p{
+    font-size: 0.4rem;
+}
+
+@media (max-width:950px){
+    .next{
+        bottom: -100px;
+        z-index: 1;
+    }
+    .glass{
+        gap: 20px;
+        flex-direction: column;
+        bottom: -180px;
+        left: 0;
     }
 }
